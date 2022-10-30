@@ -1,0 +1,220 @@
+body {
+display: flex;
+flex-direction: column;
+flex: 1;
+margin: 0;
+}
+
+
+.logo {
+ margin-right: auto;
+ padding: 20px;
+ margin-left: 50px;
+ color: #F9FAF8;
+ font-size: 24px;
+ font-weight: 700;
+}
+
+ul.top-menu {
+display: flex;
+justify-content: space-between;
+gap: 30px;
+margin-left: auto;
+padding: 20px;
+margin-right: 100px;
+color: white;
+
+}
+
+ul > li {
+list-style: none;
+}
+
+
+.header {
+
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background-color: #1F2937;
+    flex: 1;
+    }
+
+
+    .hero {
+height: 450px;                      /*Set dimensions for this section */
+max-width: 100%;
+ background-color: #1F2937;
+ color: white;
+
+margin: 0;
+    }
+
+.image-placeholder {
+    height: 250px;
+        width: 500px;
+        background-color: lightskyblue;
+        margin-left: 100px;
+      text-align: center;
+      font-weight: 600;
+      display: flex;         /*make flex to center text inside box */
+      justify-content: center;     
+      align-items: center;
+    
+    }
+
+
+    .hero-content {
+        height: 450px;              /**total height (with image placeholder) smaller than height of hero and wrap everything in a flex box
+                                       /** with column wrap so that the image placeholder box displays on the rhs*/
+        width: 600px;
+
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;   /**lines up imag with text and cta**/    
+        
+                                                  /**margin left centers hero content (unresponsively!) **/
+        margin-left: 380px;
+
+        
+    }
+
+    .hero-content > h2 {
+        font-weight: 900px;
+        font-size: 48px;
+        color: #F9FAF8;
+        margin: 0;
+    }
+
+    .hero-content > p {
+        color: #E5E7EB;
+        font-size: 18px;
+    }
+
+.hero-button {
+    max-width: 130px;
+    padding: 10px;
+    margin: 0;
+    background-color: #3882F6;
+color: white;
+border: 1px solid white;
+border-radius: 15px;
+font-size: 25px;
+}
+
+
+
+
+.info {                 /* sets the dimensions of this box */
+
+height: 350px;
+margin: 0;
+}
+
+
+.info-box {
+    height: 200px;                     /* sets dimensions of each 'image' box */
+    width: 200px;
+    background-color: pink;
+    color: white;
+    border: 2px solid black;
+    font-weight: 600;
+    display: flex;           /*make flex to center palceholder text*/
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.info-wrap {                 /* wraps the info boxes and displays them in rows with flex */
+    height: 200px;
+    display: flex;
+    justify-content: center;
+align-items: center;
+gap: 30px;
+padding-top: 20px;
+}
+
+.info-text-wrap {
+    display: flex;                 /* Just like you do for the info boxes, the text is wrapped in a flex box with rows 
+                                        so that they align exactly in position  */
+    justify-content: center;
+align-items: center;
+gap: 30px;
+padding-top: 5px;
+}
+
+.info-text {                    /* set the text box dimensions to the same as the info boxes */
+    height: 200px;
+    width: 200px;
+    text-align: center;
+
+}
+
+
+.testimonial {
+height: 350px;
+max-width: 100%;
+margin: 20px 0 0 0;
+background-color: #E5E7EB;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.testimonial-text {
+    width: 60%;
+    font-style: light italic;
+}
+
+.testimonial-text > h3 {
+    text-align: right;
+font-style: normal;
+}
+
+
+
+.cta-wrap {
+    width: 50%;
+    height: 200px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882F6;
+    border-radius: 15px;
+  
+    
+
+}
+.cta-wrap div {
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    color: white;
+}
+
+.cta-wrap div div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button.cta-button {
+   color: white;
+    background-color: #3882F6;
+    border-radius: 15px;
+font-size: 25px;
+padding: 10px;
+margin-left: 50px;
+}
+
+.footer {
+
+background-color: #1F2937;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+height: 100px;
+}
